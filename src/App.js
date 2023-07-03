@@ -102,8 +102,8 @@ return (
 )
 })
 return (
-    <div  >
-        <h1 style={{color:"white",margin:"auto",width:"280px",paddingTop:"100px"}}>Weather App</h1>
+    <div >
+        <h1 style={{color:"black",margin:"auto",width:"280px",paddingTop:"100px"}}>Weather App</h1>
         <div style={Wstyle}>
         <form onSubmit={funwether} style={{width:"100%"}}>
             <input type="text" name="tex" id="pop" placeholder="Enter any city name to check for weather details" style={{width:"75%",height:"2.4rem",color:"black"}}/>
