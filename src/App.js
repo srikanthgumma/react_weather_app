@@ -60,7 +60,7 @@ return (
      </div>
 
      <div>
-         <span style={{fontWeight:"bold"}}>{value.name}</span> <span>{Math.floor(value.main.temp-217-13)}  <sup>0</sup>C</span>
+         <span style={{fontWeight:"bold"}}>{value.name}</span> <span>{Math.floor(value.main.temp-217.13)}  <sup>0</sup>C</span>
 
     </div>          
       </div>
