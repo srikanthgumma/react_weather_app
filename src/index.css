@@ -6,8 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./images/wew.jpg') ;
-  opacity: .4;
-  z-index: 1;
+  /* opacity: .4; */
+  /* z-index: 1; */
 }
 
 code {
