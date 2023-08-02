@@ -3,8 +3,49 @@ input::placeholder{
   color: black;
 }
 @media screen and (max-width:460px) {
+  #main{
+    width:100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  img{
+    width: 100px;
+    margin: 0;
+    height: 100px;
+  }
   #showing {
     width: 100%;
+    overflow: hidden;
+    margin: 0;
+    height: auto;
   }
-  
+  #cityname{
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  #temp1{
+    display: inline-block ;
+  }
+  #temp{
+    display: inline;
+    font-size: 70px !important;
+    margin-left: 0px;
+  }
+  #weather{
+    width: 100% !important;
+  }
+  #child{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% !important;
+  justify-content: space-evenly;
+  margin: 0px !important;
+  }
+  input[type="text"]{
+    width: 30% !important;
+  }
+  input[type="submit"]{
+    width: 12% !important;
+}
 }

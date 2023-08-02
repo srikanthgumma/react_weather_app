@@ -59,9 +59,9 @@ function App() {
 
     let dataa = a.map((value, index, array) => {
         return (
-            <div style={{ marginTop: "19px", height: '320px', position: "relative" }}>
+            <div style={{ marginTop: "19px", height: '320px', position: "relative" ,width:"100%",backgroundColor:"skyblue"}} id="weather">
 
-                <div style={{ display: "flex", justifyContent: "space-around" }}>
+                <div style={{ display: "flex", justifyContent: "space-around" }} id="cityname">
 
                     <div style={{ marginLeft: "-180px" }}>
                         <span>Current Weather</span><br />
@@ -70,12 +70,11 @@ function App() {
 
                     <div>
                         <span style={{ fontWeight: "bold" }}>{value.name}</span> <span>{Math.floor(value.main.temp - 273)}  <sup>0</sup>C</span>
-
                     </div>
                 </div>
 
-                <div style={{ marginTop: "20px", display: "flex", textAlign: "center" }}>
-                    <img src={wpics} alt="sunny" width="180px" height="180px" /> <span style={{ fontSize: "7.5rem", marginLeft: "30px" }}>{Math.floor(value.main.temp - 273)} <sup>oC</sup> </span>
+                <div style={{ marginTop: "20px", display: "flex", textAlign: "center" }} id="temp1">
+                    <img src={wpics} alt="sunny" width="180px" height="180px" /> <span style={{ fontSize: "7.5rem", marginLeft: "30px" }} id="temp">{Math.floor(value.main.temp - 273)} <sup>oC</sup> </span>
                 </div>
 
 
@@ -111,12 +110,12 @@ function App() {
         )
     })
     return (
-        <div  >
-            <h1 style={{ color: "black", margin: "auto", width: "100%", paddingTop: "100px" }}>Weather App</h1>
+        <div  id="main">
+            <h1 style={{ color: "black", margin: "auto", width: "20%", paddingTop: "100px" }}>Weather App</h1>
             <div style={Wstyle}>
-                <form onSubmit={getWethearrReport} style={{ maxWidth: "100%" }}>
-                    <input type="text" name="tex" id="pop" placeholder="Enter any city name to check for weather details" style={{ width: "75%", height: "2.4rem", color: "black" }} />
-                    <input type="submit" value="SEARCH" style={{ height: "2.4rem", width: "25%" }} />
+                <form onSubmit={getWethearrReport} style={{ Width: "100%" }}>
+                    <input type="text" name="tex" id="pop" placeholder="Search for any city name/......" style={{ width: "76%", height: "2.4rem", color: "black" }} />
+                    <input type="submit" value="SEARCH" style={{ height: "2.4rem", width: "20%" }} />
                 </form>
                 <div id="showing">{dataa}</div>
             </div>
