@@ -3,7 +3,7 @@ input::placeholder{
   color: black;
 }
 @media screen and (max-width:460px) {
-  div {
+  #showing {
     width: 100%;
   }
   

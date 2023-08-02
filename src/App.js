@@ -114,11 +114,11 @@ function App() {
         <div  >
             <h1 style={{ color: "black", margin: "auto", width: "100%", paddingTop: "100px" }}>Weather App</h1>
             <div style={Wstyle}>
-                <form onSubmit={getWethearrReport} style={{ width: "100%" }}>
+                <form onSubmit={getWethearrReport} style={{ maxWidth: "100%" }}>
                     <input type="text" name="tex" id="pop" placeholder="Enter any city name to check for weather details" style={{ width: "75%", height: "2.4rem", color: "black" }} />
                     <input type="submit" value="SEARCH" style={{ height: "2.4rem", width: "25%" }} />
                 </form>
-                <div style={{width:"100%"}}>{dataa}</div>
+                <div id="showing">{dataa}</div>
             </div>
         </div>
     )
